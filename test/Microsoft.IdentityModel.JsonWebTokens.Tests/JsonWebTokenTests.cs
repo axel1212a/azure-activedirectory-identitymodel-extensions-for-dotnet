@@ -429,7 +429,7 @@ namespace Microsoft.IdentityModel.JsonWebTokens.Tests
 
                 theoryData.Add(new GetPayloadValueTheoryData("Alg_Int")
                 {
-                    ExpectedException = new ExpectedException(typeof(System.Text.Json.JsonException), "IDX11020:"),
+                    ExpectedException = new ExpectedException(typeof(System.Text.Json.JsonException), "IDX11022:"),
                     PropertyName = "Alg",
                     PropertyType = typeof(string),
                     PropertyValue = null,
@@ -512,7 +512,7 @@ namespace Microsoft.IdentityModel.JsonWebTokens.Tests
 
                 theoryData.Add(new GetPayloadValueTheoryData("Azp_Int")
                 {
-                    ExpectedException = new ExpectedException(typeof(System.Text.Json.JsonException), "IDX11020:"),
+                    ExpectedException = new ExpectedException(typeof(System.Text.Json.JsonException), "IDX11022:"),
                     PropertyName = "Azp",
                     PropertyType = typeof(string),
                     Json = JsonUtilities.CreateUnsignedToken("azp", 1)
